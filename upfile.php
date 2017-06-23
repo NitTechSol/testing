@@ -8,7 +8,8 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'Upload File'){
 function upload_file($file, $type){
    if(isset($_FILES['image'])){
       $errors= array();
-      print_r($_FILES);
+      //echo "<pre>";
+      //print_r($_FILES);
       $file_name = $_FILES['image']['name'];
       $file_size =$_FILES['image']['size'];
       $file_tmp =$_FILES['image']['tmp_name'];
