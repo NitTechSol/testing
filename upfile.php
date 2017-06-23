@@ -27,7 +27,6 @@ function upload_file($file, $type){
       if($file_size > 2097152){
          $errors[]='File size must be excately 2 MB';
       }
-      
       if(empty($errors)==true){
          //move_uploaded_file($file_tmp,"images/".$file_name);
          echo "Success";
